@@ -1,0 +1,12 @@
+.area {
+    display: flex;
+    align-items: center;
+    color: black;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.area > h1 {
+    font-size: 30px;
+    font-weight: 600;
+}

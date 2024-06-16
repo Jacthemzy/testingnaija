@@ -1,0 +1,147 @@
+.area {
+    height: 50%;
+    background-color: #fff;
+    width: 100%;
+    color: black;
+    padding: 22px;
+    position: relative;
+}
+
+.heading {
+    font-size: 28px;
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.content {
+    display: flex;
+    align-items: start;
+    width: 100%;
+    height: 61%;
+}
+
+.right {
+    /* background-color: #fff; */
+    width: 40%;
+    height: 300px;
+    color: white;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 30px;
+}
+
+.upload_box {
+    width: 75%;
+    height: 100%;
+    background-color: #d9d9d9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.upload_box > h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+}
+
+.upload_box > h2 > span {
+    color: #337c3d;
+    cursor: pointer;
+}
+
+.upload_box > h2 > span:hover {
+    text-decoration: underline;
+}
+
+.left {
+    /* background-color: #d9d9d9; */
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.top h2 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.bottom h2 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.button {
+    background-color: #11ec30;
+    font-size: 26px;
+    font-weight: 600;
+    padding: 5px 200px;
+    color: black;
+    margin: 20px 200px;
+}
+
+.button_two {
+    background-color: #11ec30;
+    font-size: 26px;
+    font-weight: 600;
+    padding: 5px 50px;
+    color: black;
+    margin: 20px 200px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+@keyframes popup {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.dialog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    height: 70%;
+    width: 60%;
+    background-color: #fff;
+    position: absolute;
+    top: 17%;
+    left: 21%;
+    z-index: 1000;
+    animation: popup 0.3s ease-out;
+}
+
+.dialog > h2 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.dialog > h2:first-of-type {
+    color: red;
+    font-weight: 800;
+}

@@ -1,0 +1,32 @@
+.area {
+    height: 50%;
+    background-color: #adadad;
+    width: 100%;
+    color: black;
+    padding: 22px;
+    position: relative;
+}
+
+.content {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    height: 94%;
+    flex-direction: column;
+}
+
+.content > h1 {
+    color: #11ec30;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.button {
+    background-color: #11ec30;
+    font-size: 26px;
+    font-weight: 600;
+    padding: 5px 200px;
+    color: black;
+    margin: 20px 200px;
+}
